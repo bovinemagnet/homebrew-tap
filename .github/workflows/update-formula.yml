@@ -1,0 +1,31 @@
+name: Update Homebrew Formula
+
+on:
+  repository_dispatch:
+    types: [update-formula]
+
+jobs:
+  update-formula:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout tap repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Update formula
+        run: |
+          echo "Formula will be automatically updated by GoReleaser"
+          echo "This workflow is a placeholder for manual updates if needed"
+
+      - name: Validate formula
+        run: |
+          # Install Homebrew for testing
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> ~/.bashrc
+          eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+          
+          # Test the formula
+          brew install --build-from-source ./Formula/graphqls-to-asciidoc.rb
+          brew test graphqls-to-asciidoc
+          brew uninstall graphqls-to-asciidoc

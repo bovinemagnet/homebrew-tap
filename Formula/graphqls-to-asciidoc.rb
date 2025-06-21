@@ -5,21 +5,21 @@
 class GraphqlsToAsciidoc < Formula
   desc "Convert GraphQL schema files to comprehensive AsciiDoc documentation"
   homepage "https://github.com/bovinemagnet/graphqls-to-asciidoc"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bovinemagnet/graphqls-to-asciidoc/releases/download/0.1.2/graphqls-to-asciidoc_0.1.2_Darwin_x86_64.tar.gz"
-      sha256 "20230e68ba6f9f5b6d1a1c44b0eacd3948e9315d4afcabc6587ecc6421e1349e"
+      url "https://github.com/bovinemagnet/graphqls-to-asciidoc/releases/download/0.1.3/graphqls-to-asciidoc_0.1.3_Darwin_x86_64.tar.gz"
+      sha256 "a009166f323faaf586e7cdf0d2289c85a9179376e8d49b0fe9e04f533e6b7eeb"
 
       def install
         bin.install "graphqls-to-asciidoc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bovinemagnet/graphqls-to-asciidoc/releases/download/0.1.2/graphqls-to-asciidoc_0.1.2_Darwin_arm64.tar.gz"
-      sha256 "ca1ae64219cd312199316025a0570e44175bae3a04948fd265b0a4d0ea8e7d95"
+      url "https://github.com/bovinemagnet/graphqls-to-asciidoc/releases/download/0.1.3/graphqls-to-asciidoc_0.1.3_Darwin_arm64.tar.gz"
+      sha256 "5c5c52d14c5c246866ef5e3ba977291a16b8840cee6ddcafdf3a4c66423afeaf"
 
       def install
         bin.install "graphqls-to-asciidoc"
@@ -29,15 +29,15 @@ class GraphqlsToAsciidoc < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/bovinemagnet/graphqls-to-asciidoc/releases/download/0.1.2/graphqls-to-asciidoc_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "a5d0c9639cf75701fc12785d9f1c4c2b94850895d75cf67f5d6a53db661b79a2"
+      url "https://github.com/bovinemagnet/graphqls-to-asciidoc/releases/download/0.1.3/graphqls-to-asciidoc_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "712e68d4505c5f204c343bc8734e50d64a8cffdd464bcb5a3af785dcec3a3528"
       def install
         bin.install "graphqls-to-asciidoc"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/bovinemagnet/graphqls-to-asciidoc/releases/download/0.1.2/graphqls-to-asciidoc_0.1.2_Linux_arm64.tar.gz"
-      sha256 "280b333ac5f34ad9757534730b0b691ff5673e0e39add912acfd15628a5a9390"
+      url "https://github.com/bovinemagnet/graphqls-to-asciidoc/releases/download/0.1.3/graphqls-to-asciidoc_0.1.3_Linux_arm64.tar.gz"
+      sha256 "ee9773d92155a6feaa475f2ed691d9638b51e9c11734d29f657c10012db8c0fe"
       def install
         bin.install "graphqls-to-asciidoc"
       end

@@ -3,7 +3,7 @@ cask "gossm" do
   name "gossm"
   desc "Tool to connect to aws resources."
   homepage "https://github.com/bovinemagnet/gossm"
-  version "0.3"
+  version "0.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "gossm" do
   on_macos do
     on_intel do
       url "https://github.com/bovinemagnet/gossm/releases/download/v#{version}/gossm_#{version}_Darwin_x86_64_homebrew.tar.gz"
-      sha256 "db0fca7a022335bba9c9c290deb0a2e2d3cd537b68eb5b7fae48590b203cfe5b"
+      sha256 "84579f091891bfc9662f8b731022c82c091461dc32c5ec2181b70259e4f9f0ae"
     end
     on_arm do
       url "https://github.com/bovinemagnet/gossm/releases/download/v#{version}/gossm_#{version}_Darwin_arm64_homebrew.tar.gz"
-      sha256 "bf9fad0b49ccb1ffdb736c34a7969f28bd3e2856c55cc7d0a32696f5d50bfd13"
+      sha256 "c22046c579d68cc6de6d5a7f96a07c7f8f7c26cec408d0b06d89bfed694a9cfa"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/bovinemagnet/gossm/releases/download/v#{version}/gossm_#{version}_Linux_x86_64_homebrew.tar.gz"
-      sha256 "c9facaa2989334151a6fa58fbb6ac6ef9d65400bb0a05cded1f3de59fd5dd6a0"
+      sha256 "1bed5edd63cb4f76a9957d20d5a2361db770b8a7dc7c670ee7b95bdb6e856c9e"
     end
     on_arm do
       url "https://github.com/bovinemagnet/gossm/releases/download/v#{version}/gossm_#{version}_Linux_arm64_homebrew.tar.gz"
-      sha256 "7f0f57b5daa61fe9a81980c369ebcc97b1bf99e2a41f6cbe39c1c9505d7f0929"
+      sha256 "513903551dca205c313c363dda388e6bce34e22a8d661a224a0c1e1bd5542a51"
     end
   end
 

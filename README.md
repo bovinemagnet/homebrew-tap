@@ -4,7 +4,7 @@ This is the official Homebrew tap for tools released by [bovinemagnet](https://g
 
 | Package | Type | Description | Licence |
 |---------|------|-------------|---------|
-| [graphqls-to-asciidoc](https://github.com/bovinemagnet/graphqls-to-asciidoc) | Formula | Converts GraphQL schema files to AsciiDoc documentation | MIT |
+| [graphqls-to-asciidoc](https://github.com/bovinemagnet/graphqls-to-asciidoc) | Formula | Converts GraphQL schema files to AsciiDoc documentation | Apache-2.0 |
 | [gossm](https://github.com/bovinemagnet/gossm) | Cask | CLI tool for managing AWS SSM sessions | GPL-3.0 |
 
 ## Adding the Tap
@@ -116,4 +116,4 @@ Contributions are welcome! Please see the relevant main repository for contribut
 
 ## Licence
 
-Each tool is licensed under its own terms: graphqls-to-asciidoc under the [MIT License](https://github.com/bovinemagnet/graphqls-to-asciidoc/blob/main/LICENSE), and gossm under the [GPL-3.0 License](https://github.com/bovinemagnet/gossm/blob/main/LICENSE).
+Each tool is licensed under its own terms: graphqls-to-asciidoc under the [Apache-2.0 License](https://github.com/bovinemagnet/graphqls-to-asciidoc/blob/main/LICENSE), and gossm under the [GPL-3.0 License](https://github.com/bovinemagnet/gossm/blob/main/LICENSE).

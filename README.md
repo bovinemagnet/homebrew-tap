@@ -6,6 +6,7 @@ This is the official Homebrew tap for tools released by [bovinemagnet](https://g
 |---------|------|-------------|---------|
 | [graphqls-to-asciidoc](https://github.com/bovinemagnet/graphqls-to-asciidoc) | Formula | Converts GraphQL schema files to AsciiDoc documentation | Apache-2.0 |
 | [gossm](https://github.com/bovinemagnet/gossm) | Cask | CLI tool for managing AWS SSM sessions | GPL-3.0 |
+| [adocfoundry](https://github.com/bovinemagnet/AdocFoundry) | Cask | Native desktop editor for AsciiDoc and Antora documentation | Apache-2.0 |
 
 ## Adding the Tap
 
@@ -106,6 +107,38 @@ Once you select an instance, gossm launches the session via `aws ssm start-sessi
 - **Issues**: [GitHub Issues](https://github.com/bovinemagnet/gossm/issues)
 - **Releases**: [GitHub Releases](https://github.com/bovinemagnet/gossm/releases)
 
+## adocfoundry
+
+A native desktop editor for AsciiDoc documentation laid out the Antora way, with a rendered preview, visual editing, PDF export and a graph of the workspace's links. The cask installs AdocFoundry.app (macOS 13 or later, universal) and puts its command-line tools on your `PATH`: `adocfoundry-cli`, the `adoc-ls` language server and the `adoc-mcp` MCP server.
+
+### Installation
+
+```bash
+# After adding the tap
+brew install --cask adocfoundry
+
+# Or as a one-liner
+brew install --cask bovinemagnet/tap/adocfoundry
+```
+
+AdocFoundry updates itself, so `brew upgrade` leaves it alone unless you pass `--greedy`.
+
+### Usage
+
+```bash
+# Open a documentation folder in the app
+open -a AdocFoundry path/to/docs
+
+# Check a workspace's references from the command line
+adocfoundry-cli check path/to/docs
+```
+
+### Links
+
+- **Main Repository**: [bovinemagnet/AdocFoundry](https://github.com/bovinemagnet/AdocFoundry)
+- **Issues**: [GitHub Issues](https://github.com/bovinemagnet/AdocFoundry/issues)
+- **Releases**: [GitHub Releases](https://github.com/bovinemagnet/AdocFoundry/releases)
+
 ## Support
 
 For issues, feature requests, or questions, please use the issue tracker of the relevant main repository linked above.
@@ -116,4 +149,4 @@ Contributions are welcome! Please see the relevant main repository for contribut
 
 ## Licence
 
-Each tool is licensed under its own terms: graphqls-to-asciidoc under the [Apache-2.0 License](https://github.com/bovinemagnet/graphqls-to-asciidoc/blob/main/LICENSE), and gossm under the [GPL-3.0 License](https://github.com/bovinemagnet/gossm/blob/main/LICENSE).
+Each tool is licensed under its own terms: graphqls-to-asciidoc under the [Apache-2.0 License](https://github.com/bovinemagnet/graphqls-to-asciidoc/blob/main/LICENSE), gossm under the [GPL-3.0 License](https://github.com/bovinemagnet/gossm/blob/main/LICENSE), and AdocFoundry under the [Apache-2.0 License](https://github.com/bovinemagnet/AdocFoundry/blob/main/LICENSE).

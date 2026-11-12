@@ -1,6 +1,6 @@
 cask "adocfoundry" do
-  version "0.9.0"
-  sha256 "1caebffe2e90e2a94a715b14bef3c3d13ff9154bc5bf86de699d2c5f1892d9d9"
+  version "0.10.0"
+  sha256 "0b036195bc27ba5cbca7f29362bbcb1e1030b82b376bc6aec43d0ddffdda2ca9"
 
   url "https://github.com/bovinemagnet/AdocFoundry/releases/download/v#{version}/AdocFoundry-#{version}-macos-universal.dmg"
   name "AdocFoundry"
